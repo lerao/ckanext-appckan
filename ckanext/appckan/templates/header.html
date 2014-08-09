@@ -1,0 +1,6 @@
+{% set current_url = h.full_current_url() %}
+{% ckan_extends %}
+{% block header_site_navigation_tabs %}
+{{ super() }}
+<li><a href="http://appckan.com?repository={{ current_url }}">Apps</a></li>
+{% endblock %}
